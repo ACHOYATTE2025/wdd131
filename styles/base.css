@@ -8,8 +8,9 @@
   --primary-color :  #080708;
   --secondary-color : #3772FF;
   --accent1-color : #DF2935;
-  --accent2-color : #FDCA40;
+  --accent2-color : #FFD700;
   --accent3-color : #E6E8E6;
+  --accent4-color:  #FFFFFF;
   --heading-font : "Roboto";
   
 
@@ -33,7 +34,7 @@ header,main,footer{
   position: relative;
   align-items: center;
   text-align: center;
-  color:var(--accent3-color);
+  color:var(--accent4-color);
   background-color: var(--secondary-color);
   font-family: var(--heading-font) ;
   font-size: larger;
@@ -58,7 +59,7 @@ header,main,footer{
 }
 
 .nav1 a{
-  color:var(--accent3-color);
+  color:var(--accent4-color);
   font-weight: bolder;
   text-decoration: none;
 }
@@ -203,9 +204,9 @@ footer{
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
-  margin-top: 455px;
+  margin-top: 445px;
   height: 60px;
-  color:var(--accent3-color);
+  color:var(--accent4-color);
   background-color: var(--secondary-color);
   font-family: var(--heading-font) ;
 }

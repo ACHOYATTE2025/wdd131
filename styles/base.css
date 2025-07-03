@@ -126,12 +126,11 @@ h1{
   margin-top: 10px;
 }
 
-.h2{
+h3{
   display: block;
   align-items: center;
   text-align: center;
   font-family: var(--body-font);
-  font-weight: bolder;
   margin-top: 55px;
   margin-left: 20px;
 }
@@ -141,8 +140,10 @@ hr{
   width: 300px;
 }
 
-strong{
+h4{
   color: var(--accent1-color);
+  font-family: var(--body-font);
+
 }
 
 .card2{

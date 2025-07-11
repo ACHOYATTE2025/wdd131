@@ -45,6 +45,7 @@ header {
 main {
 	
 	padding-left: 15px;
+
 	
 }
 
@@ -68,6 +69,7 @@ h2 {
 	display: block;
 	top: 1rem;
 	right: 1rem;
+	
 	
 }
 
@@ -95,6 +97,7 @@ h2 {
 	margin-top: 0;
 	place-items: center;
 	margin-right: 20px;
+	margin-left: 10px;
 		
 }
 
@@ -103,6 +106,11 @@ nav ul {
 	list-style: none;
 	display: flex;
 	flex-direction: column;
+	background-color: #3a86ff;
+	margin-left: 10px;
+	margin-top: 20px;
+	font-weight: bolder;
+	font-size: larger;
 }
 
 nav a {
@@ -113,14 +121,16 @@ nav a {
 	padding: 2rem;
 	text-decoration: none;
 	font-size: larger;
-	height: 40px;
-	margin-bottom: 10px;
+	height: 80px;
+
 	background-color: var(--accent4-color);
+	margin-top: 30px;
 	
 }
 
 nav a:hover {
 	background-color: white;
+	height: 80px;
 	color:var(--secondary-color);
 }
 

@@ -184,7 +184,7 @@ footer{
 #image1 {
   position: absolute;
     width: 100vw;
-    height: 610px;
+    height: 550px;
     max-width: none; /* annule la limitation à 590px */
     object-fit: cover; /* ou fill selon ton objectif */
   }
@@ -254,7 +254,7 @@ td {
   text-align: center;
   color: var(--accent2-color);
   margin-right: 0px;
-  margin-left: 1230px;
+  margin-left: 1060px;
   z-index: 10;
   
 }
@@ -267,7 +267,7 @@ td {
     opacity: 0.7;
     margin-top:300px;
     padding-top: 90px;
-    margin-left: 1245px;
+    margin-left: 1090px;
     padding-bottom: 15px;
     width: 250px;
     z-index: 1;
@@ -294,8 +294,8 @@ footer{
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
-  margin-top: 610px;
-  height: 75px;
+  margin-top: 535px;
+  height: 60px;
   color:var(--accent2-color);
   background-color: var(--primary-color);
   font-family: var(--heading-font) ;

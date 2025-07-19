@@ -130,6 +130,7 @@ hr{
   .section2{
     display: grid;
     place-items: center;
+    margin-top: -10px;
   }
 
   .image2{
@@ -137,7 +138,7 @@ hr{
   width: 100px;
   text-align: center;
   margin-bottom: 5px;
-  margin-left: 220px;
+  margin-left: 190px;
   }
 
 

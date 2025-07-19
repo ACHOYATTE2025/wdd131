@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/place.css">
+    <link rel="stylesheet" href="styles/place.css">
     <script src="./scripts/place.js" defer></script>
     <title>COTE D'IVOIRE PAGE</title>
   </head>
@@ -20,7 +20,17 @@
     </header>
     <main>
       <div class="container">
-        <img   id="image1" src="./images/elephant-bis.webp" alt="elephant"/>
+      <img
+  id="image1"
+  src="./images/elephant-large.webp"
+  srcset="
+    ./images/elephant-small.webp 480w,
+    ./images/elephant-medium.webp 800w,
+    ./images/elephant-bis.webp 1200w
+  "
+  sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px"
+  alt="elephant"
+/>
       </div>
     
       <div id="div2"></div>
@@ -44,7 +54,7 @@
             <td id="label4">Languages:</td> <td id="answer4">French</td>
           </tr>
            <tr>
-            <td id="label5">Currency:</td> <td id="answer4">Franc CFA</td>
+            <td id="label5">Currency:</td> <td id="answer5">Franc CFA</td>
           </tr>
            <tr>
             <td id="label6">Time Zone:</td> <td id="answer6">UTC +00</td>

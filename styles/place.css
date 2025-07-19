@@ -116,7 +116,10 @@ td {
 
 
 hr{
+  margin-top: 10px;
   width: 100%;
+  border: 2px solid var(--secondary-color);
+  color: var(--accent2-color);
 }
 
 #weather{

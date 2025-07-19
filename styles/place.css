@@ -194,7 +194,7 @@ footer{
   
 }
 
-#clo::before{
+#clo::after{
   width:100%;
 }
 

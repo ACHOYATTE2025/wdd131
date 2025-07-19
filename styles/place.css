@@ -20,7 +20,7 @@
 	box-sizing: border-box;
 }
 
-body {font-family: Roboto, sans-serif;
+body {font-family: var(--body-font);
 
 }
 
@@ -108,11 +108,11 @@ td {
   padding: 10px;
 }
 
-#label{
+#label1,#label2,#label3,#label4,#label5,#label6,#label7,#label8,#labela
+,#labelb,#labelc,#labeld{
   font-weight: bolder;
   text-align: right;
 }
-
 
 #weather{
   text-align: center;

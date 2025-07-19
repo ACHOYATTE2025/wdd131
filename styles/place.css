@@ -194,6 +194,9 @@ footer{
   
 }
 
+#clo::before{
+  width:100%;
+}
 
 table {
   border-collapse: separate;

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Yatte Deivy Constant ACHO, Student in Bachelor  applied Science in Softwware Development" >
+    <meta name="description" content="This WDD 131 – This assignment applies the concepts presented in the learning activities to a picture album page that is responsive in small and larger views. This page will utilize a 'hamburger' menu and respond to user requests.." >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Farro:wght@300;400;500;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/place.css">
+    <link rel="stylesheet" href="./styles/place-large.css">
+    <script src="./scripts/place.js" defer></script>
+    <title>Country Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>CÔTE D'IVOIRE</h1>
+      <div id="div1"></div>
+    </header>
+    <main>
+      <div class="container">
+        <img   id="image1"      src="./images/elephant-small.webp"
+                            srcset="./images/elephant-small.webp 590w,
+                                ./images/elephant-medium.webp 800w,
+                                ./images/elephant-bis.webp 1980w"
+                            sizes="(max-width: 600px) 590px,
+                                (min-width: 768px) 1980px,100vw"
+                  alt="elephant"/>
+      </div>
+    
+      <div id="div2"></div>
+       <div id="data">
+         <h2 >Data</h2>
+        </div>
+      <section class="section1">
+       
+        <table>
+
+          <tr>
+            <td id="label">Area</td> <td id="answer">322.682 sq KM</td>
+          </tr>
+           <tr>
+            <td id="label">Population</td> <td id="answer">32,700,000</td>
+          </tr>
+           <tr>
+            <td id="label">Capital</td> <td id="answer">Yamoussoukro</td>
+          </tr>
+           <tr>
+            <td id="label">Languages</td> <td id="answer">French</td>
+          </tr>
+           <tr>
+            <td id="label">Currency</td> <td id="answer">Franc CFA</td>
+          </tr>
+           <tr>
+            <td id="label">Time Zone</td> <td id="answer">UTC +00</td>
+          </tr>
+           <tr>
+            <td id="label">Calling Code </td> <td id="answer">+225</td>
+          </tr>
+           <tr>
+            <td id="label">Internet TDL</td> <td id="answer">.ci</td>
+          </tr>
+         
+        </table>
+      </section>
+      <div id="weather">
+        <h2 >Weather</h2>
+      </div>
+      
+
+      <div class="image2" >
+          <img    src="./images/weather.svg" alt="weather"/>
+      </div>
+      <section class="section2">
+
+        
+        
+        <table>
+          <tr>
+            <td id="label">Temperature</td> <td id="temp">1000 </td>
+          </tr>
+          <tr>
+            <td id="label">Conditions</td><td id="cond">1000</td>
+          </tr>
+          <tr>
+            <td id="label">Winds</td><td id="winds">1000</td>
+          </tr>
+          <tr>
+            <td id="label">Wind Chill</td><td id="windchill">1000</td>
+          </tr>
+        </table>
+      </section>
+
+    </main>
+    <footer>
+      <p id="footerp1"><span id="currentyear"></span> </p>
+      <p id="lastModified"></p>
+    </footer>
+   
+    
+
+  </body>
+</html>

@@ -114,6 +114,11 @@ td {
   text-align: right;
 }
 
+
+hr{
+  width: 100%;
+}
+
 #weather{
   text-align: center;
   margin-top: 50px;
@@ -170,7 +175,9 @@ footer{
   main{position: absolute;
         width: 100%;}
 
-
+hr{
+  display: none;
+}
 
 #div1{
   

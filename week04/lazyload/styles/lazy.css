@@ -1,0 +1,77 @@
+
+:root {
+  --primary-color :  #FF6F00;
+  --secondary-color : #5FE218;
+  --accent1-color : white;
+  --accent2-color : #000000;
+  --accent3-color : rgb(177, 8, 229);
+  --accent4-color : #f6b606;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+main{
+  margin: 0 auto;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+img{
+  width: 100%;
+  background: #000000;
+  animation: fade 15s;
+}
+
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+  
+  100%{
+    opacity: 1;
+  }
+}
+
+
+footer{
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-top: 10rem;
+  height: 60px;
+  color:var(--accent2-color);
+  background-color: var(--primary-color);
+  font-family: var(--heading-font) ;
+	font-weight: bolder;
+}
+
+
+
+
+#footerp1{
+ padding-bottom: 15px;
+ 
+}
+#lastModified{
+  position: absolute;
+  padding-top: 25px;
+  color: var(--accent2-color);
+  
+}

@@ -1,0 +1,186 @@
+:root {
+  --heading-font: 'Roboto', sans-serif;
+  --body-font: 'Arvo', sans-serif;
+}
+
+
+:root {--primary-color :  #080708;
+  --secondary-color : #ffbe0b;
+  --accent1-color : #fb5607;
+  --accent2-color : #ff006e;
+  --accent3-color : #670909;
+  --accent4-color:  #112A46;
+  --heading-font : "Roboto";
+  
+
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {font-family: Roboto, sans-serif;
+
+}
+
+/* mobile **************************/
+header {
+	background-color:var(--secondary-color);
+	display: grid;
+	grid-gap: 0rem;
+	padding: 20px;
+	border: 1px solid #ffbe0b;
+	box-shadow: 0 0 30px var(--accent4-color);
+	height: 80px;
+	position: relative;
+	margin-left: 0px;
+	
+;
+}
+
+main {
+	
+	padding-left: 15px;
+
+	
+}
+
+h2 {
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 5rem;
+	
+}
+
+#mena{
+	margin-top: 100px;
+	color: var(--accent4-color);
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color:var(--accent4-color);
+	position: absolute;
+	display: block;
+	top: 1rem;
+	right: 1rem;
+	
+	
+}
+
+#menu::before {
+	content:"❌" ;
+}
+
+#menu.open::before {
+	content: "☰";
+	
+	
+}
+
+
+.open  {
+	display: none;
+}
+
+ .close{
+	margin-top: 0rem;
+}
+
+
+
+
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	background-color: #3a86ff;
+	margin-left: 10px;
+	margin-top: 20px;
+	font-weight: bolder;
+	font-size: larger;
+}
+
+nav a {
+	display: block;
+	color:white;
+	font-weight: bolder;
+	text-align: center;
+	padding: 2rem;
+	text-decoration: none;
+	font-size: larger;
+	height: 80px;
+
+	background-color: var(--accent4-color);
+	margin-top: 30px;
+	
+}
+
+nav a:hover {
+	background-color: white;
+	height: 80px;
+	color:var(--accent3-color);
+}
+
+.active {
+	color:yellow ;
+}
+
+
+main {
+  max-width: 767px;
+  margin: 0 auto;
+}
+
+
+.temple-card {
+	margin-left: 2rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: 400px;
+		height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: white;
+  }
+  .temple-image {
+		margin-top: 2rem;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+
+
+
+footer{
+  position:sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  height: 80px;
+  color:var(--accent3-color);
+  background-color: var(--secondary-color);
+  font-family: var(--heading-font) ;
+	font-weight: bolder;
+}
+
+#footerp1{
+ padding-bottom: 15px;
+ 
+}
+#lastModified{
+  position: absolute;
+  padding-top: 25px;
+  color: var(--accent4-color);
+  
+}
+

@@ -1,16 +1,20 @@
-const hamButton = document.querySelector('#menu');
+document.body.classList.add('js-enabled');
+
+ hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navmenu');
 const container = document.querySelector(".container");
 const active = document.querySelector("#mena");
 
 hamButton.addEventListener('click', () => {
   hamButton.classList.toggle('open');
-	navigation.classList.toggle('open');
   container.classList.toggle('close');
-  
+  navigation.classList.toggle('open');  
   
 	
 });
+
+
+
 
   
 //=========================================================================================
@@ -145,6 +149,7 @@ const home= document.querySelector(".active");
 home.addEventListener('click',()=>{
 
   navigation.classList.toggle('open');
+  hamButton.classList.toggle('open');
   active.textContent="Home";
   createTempleCard(temples);
 });
@@ -157,9 +162,9 @@ const old = temples.filter(temple => {
   return year < 1900;
 });
 Old.addEventListener('click',()=>{
- 
-	navigation.classList.toggle('open');
-  
+
+  navigation.classList.toggle('open');
+  hamButton.classList.toggle('open');
   active.textContent="Old";
   createTempleCard(old);
 });
@@ -172,8 +177,9 @@ const nex = temples.filter(temple => {
 });
 New.addEventListener('click',()=>{
   
-	navigation.classList.toggle('open');
-  
+	
+  navigation.classList.toggle('open');
+  hamButton.classList.toggle('open');
   active.textContent="New";
   createTempleCard(nex);
 });
@@ -186,8 +192,9 @@ const large = temples.filter(temple=>{
 })
 Large.addEventListener('click',()=>{
  
-	navigation.classList.toggle('open');
-  
+
+  navigation.classList.toggle('open');
+  hamButton.classList.toggle('open');
   active.textContent="Large";
   createTempleCard(large);
 });
@@ -199,9 +206,9 @@ const small = temples.filter(temple=>{
   return area<10000;
 })
 Small.addEventListener('click',()=>{
-  
-	navigation.classList.toggle('open');
-  
+
+  navigation.classList.toggle('open');
+  hamButton.classList.toggle('open');
   active.textContent="Small";
   createTempleCard(small);
 });

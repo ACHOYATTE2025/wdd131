@@ -55,12 +55,21 @@ h1 {
 	color: var(--accent4-color);
 }
 
+.js-enabled .navmenu ul {
+  display: flex;
+	height: 80px;
+}
 
 	nav ul {
 		justify-content: flex-end;
 		flex-direction: row;
 		margin-top: 00px;
+		list-style: none;
+	  display: flex;
+		
 	}
+
+
 	nav a {
 		
 		color: var(--accent3-color);

@@ -61,6 +61,7 @@ h2 {
 }
 
 #menu {
+	
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
@@ -74,18 +75,13 @@ h2 {
 }
 
 #menu::before {
-	content:"❌" ;
+	content:"☰" ;
 }
 
 #menu.open::before {
-	content: "☰";
+	content: "❌";
 	
 	
-}
-
-
-.open  {
-	display: none;
 }
 
 .close{
@@ -94,8 +90,19 @@ h2 {
 
 
 
+/* Par défaut (avec JS activé), cacher le menu */
+.js-enabled .navmenu ul {
+  display: none;
+}
 
-nav ul {
+/* Afficher le menu quand le bouton est en mode ouvert */
+.js-enabled .navmenu.open ul {
+  display: flex;
+  flex-direction: column;
+}
+
+
+ nav ul{
 	list-style: none;
 	display: flex;
 	flex-direction: column;
@@ -104,6 +111,8 @@ nav ul {
 	margin-top: 20px;
 	font-weight: bolder;
 	font-size: larger;
+	height: 600px;
+	border-radius: 8px;
 }
 
 nav a {

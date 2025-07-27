@@ -20,7 +20,7 @@
 	box-sizing: border-box;
 }
 
-body {font-family: Roboto, sans-serif;
+body {font-family: var(--body-font);
 
 }
 
@@ -44,7 +44,7 @@ header{
   
     width: 100%;
     height: 20px;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-left: -5px;
     background-color: var(--secondary-color);
   }
@@ -108,11 +108,19 @@ td {
   padding: 10px;
 }
 
-#label{
+#label1,#label2,#label3,#label4,#label5,#label6,#label7,#label8,#labela
+,#labelb,#labelc,#labeld{
   font-weight: bolder;
   text-align: right;
 }
 
+
+hr{
+  margin-top: 10px;
+  width: 100%;
+  border: 2px solid var(--secondary-color);
+  color: var(--accent2-color);
+}
 
 #weather{
   text-align: center;
@@ -122,6 +130,7 @@ td {
   .section2{
     display: grid;
     place-items: center;
+    margin-top: -10px;
   }
 
   .image2{
@@ -129,7 +138,7 @@ td {
   width: 100px;
   text-align: center;
   margin-bottom: 5px;
-  margin-left: 220px;
+  margin-left: 190px;
   }
 
 
@@ -170,7 +179,9 @@ footer{
   main{position: absolute;
         width: 100%;}
 
-
+hr{
+  display: none;
+}
 
 #div1{
   
@@ -194,6 +205,9 @@ footer{
   
 }
 
+#clo::after{
+  width:100%;
+}
 
 table {
   border-collapse: separate;
@@ -279,7 +293,7 @@ td {
   height: 40px;
   padding-top: 10px;
   margin-top:300px;
-  margin-left: 1380px;
+  margin-left: 1200px;
   z-index: 10;
   opacity: 1;
 }

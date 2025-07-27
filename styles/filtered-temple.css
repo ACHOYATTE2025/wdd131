@@ -88,32 +88,29 @@ h2 {
 	margin-top: 0rem;
 }
 
-
-
-/* Par défaut (avec JS activé), cacher le menu */
 .js-enabled .navmenu ul {
-  display: none;
+  display: block;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease;
 }
 
-/* Afficher le menu quand le bouton est en mode ouvert */
 .js-enabled .navmenu.open ul {
-  display: flex;
+  max-height: 500px;
+}
+
+
+nav ul {
   flex-direction: column;
+  background-color: #3a86ff;
+  margin-left: 10px;
+  margin-top: 20px;
+  font-weight: bolder;
+  font-size: larger;
+  border-radius: 8px;
+  transition: max-height 0.5s ease;
 }
 
-
- nav ul{
-	list-style: none;
-	display: flex;
-	flex-direction: column;
-	background-color: #3a86ff;
-	margin-left: 10px;
-	margin-top: 20px;
-	font-weight: bolder;
-	font-size: larger;
-	height: 600px;
-	border-radius: 8px;
-}
 
 nav a {
 	display: block;

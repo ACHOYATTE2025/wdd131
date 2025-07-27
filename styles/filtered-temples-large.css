@@ -55,19 +55,23 @@ h1 {
 	color: var(--accent4-color);
 }
 
-.js-enabled .navmenu ul {
-  display: flex;
-	height: 80px;
+.close{
+	display: flex;
+	flex-direction: row;
 }
 
-	nav ul {
-		justify-content: flex-end;
-		flex-direction: row;
-		margin-top: 00px;
-		list-style: none;
-	  display: flex;
-		
-	}
+
+.js-enabled .navmenu ul {
+  display: flex;
+	flex-direction: row;
+	flex-direction: row;
+	margin-top: -50px;
+	list-style: none;
+	height: 80px;
+	overflow: visible;
+	margin-bottom: 0px;
+}
+
 
 
 	nav a {
@@ -80,7 +84,7 @@ h1 {
 	
 nav a:hover {
 	background-color: var(--accent2-color);
-	height: 80px;
+	height: 90px;
 	color:var(--accent3-color);
 	
 }
@@ -89,7 +93,7 @@ nav a:hover {
 		font-size: larger;
 		font-weight: bolder;
 		top: 0px;
-		display: grid; /* hauteur du header */
+		display: grid; 
 		grid-gap: 3rem;
 		
 		

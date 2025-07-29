@@ -1,0 +1,219 @@
+:root {
+  --primary-color :  #4B0082;
+  --secondary-color : #FFFFFF;
+  --accent1-color : #000000;
+  --accent2-color : #D3C8C8;
+  --accent3-color : #0FE6DB;
+  --heading-font: 'Roboto', sans-serif;
+  --body-font: 'Arvo', sans-serif;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+
+/* mobile **************************/
+header {
+	background-color:var(--primary-color);
+	display: grid;
+	grid-gap: 0rem;
+	padding: 20px;
+	border: 1px solid var(--secondary-color);
+	box-shadow: 0 0 30px var(--accent2-color);
+	height: 90px;
+	position: relative;
+	margin-left: 0px;
+	
+;
+}
+
+main {
+
+	padding-left: 0px;
+
+	}
+
+h2 {
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 5rem;
+	
+}
+
+#zaouli{
+	margin-top: 100px;
+	color: var(--accent3-color);
+}
+
+
+
+
+#iconik{
+  margin-top: -15px;
+  margin-left: -20px;
+  width: 60px;
+  height: 80px;
+}
+
+#zaouli_description{
+font-style: oblique;
+}
+
+
+#menu {
+	
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color:var(--secondary-color);
+	position: absolute;
+	display: block;
+	top: 1rem;
+	right: 1rem;
+	
+	
+}
+
+#menu::before {
+	content:"☰" ;
+}
+
+#menu.open::before {
+	content: "❌";
+	
+	
+}
+
+.close{
+	margin-top: 0rem;
+}
+
+.js-enabled .navmenu ul {
+  display: block;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease;
+}
+
+.js-enabled .navmenu.open ul {
+  max-height: 400px;
+}
+
+nav ul {
+  flex-direction: column;
+  background-color: var(--accent2-color);
+  color: var(--accent1-color);
+  margin-left: 10px;
+  margin-top: 20px;
+  font-weight: bolder;
+  font-size: large;
+  border-radius: 8px;
+  transition: max-height 0.5s ease;
+}
+
+
+nav a {
+	display: block;
+	color: var(--accent1-color);
+	font-weight: bolder;
+	text-align: center;
+	padding: 0rem;
+	text-decoration: none;
+	font-size: large;
+	height: 80px;
+	margin-top:10px;
+	
+}
+
+nav a:hover {
+	color: var(--primary-color);
+	height: 80px;
+	width: auto;
+	
+	
+	
+	
+}
+
+.active {
+	color:var(--primary-color) ;
+}
+
+
+main {
+  max-width: 767px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+	justify-content: center;
+}
+
+img{
+	width: 350px;
+	height: 250px;
+}
+
+.temple-card {
+	  margin-left: 0rem;
+    border: 1px solid #ccc;
+    padding: 0rem;
+    width: 350px;
+		height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: white;
+		align-items: center;
+		text-align: center;
+	  transition: transform 0.3s ease, box-shadow 0.3s ease;
+		
+  }
+
+	.temple-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+  .temple-image {
+		margin-top: 2rem;
+    width: 100%;
+    
+  }
+
+
+
+
+footer{
+  position:sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-top: 16rem;
+  height: 60px;
+  color:var(--secondary-color);
+  background-color: var(--primary-color);
+  font-family: var(--heading-font) ;
+	font-weight: bolder;
+}
+
+#footerp1{
+ padding-bottom: 15px;
+ 
+}
+#lastModified{
+  position: absolute;
+  padding-top: 25px;
+  color: var(--accent4-color);
+  
+}

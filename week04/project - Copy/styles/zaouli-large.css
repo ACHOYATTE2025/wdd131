@@ -1,27 +1,20 @@
 :root {
+  --primary-color :  #4B0082;
+  --secondary-color : #FFFFFF;
+  --accent1-color : #000000;
+  --accent2-color : #D3C8C8;
+   --accent3-color : #0FE6DB;
   --heading-font: 'Roboto', sans-serif;
   --body-font: 'Arvo', sans-serif;
 }
 
-
-:root {
-  --primary-color :  #080708;
-  --secondary-color : #ffbe0b;
-  --accent1-color : #fb5607;
-  --accent2-color : white;
-  --accent3-color : #670909;
-  --accent4-color:  #112A46;
-  --heading-font : "Roboto";
-  
-
-}
-
-
-* {
+*{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
+
 
 /* Larger Views ******************************/
 @media (min-width: 768px) {
@@ -36,24 +29,26 @@ main {
   margin: 0 auto;
 }
 
-	body{font-family: var(--body-font);}
+	header{font-family: var(--heading-font);}
+  body{font-family: var(--body-font);}
 
 	#menu {
 		display: none; /* hide hamburger button */
 	}
+
+  
+#iconik{
+  margin-top: 5px;
+  margin-left: 0px;
+  width: 60px;
+  height: 80px;
+}
+
 .container{
 	margin-top: 5rem;
 	place-items: center;
 }
 
-	
-h1 {
-	font-size: 2rem;
-	text-align: center;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-	color: var(--accent4-color);
-}
 
 .close{
 	display: flex;
@@ -63,7 +58,6 @@ h1 {
 
 .js-enabled .navmenu ul {
   display: flex;
-	flex-direction: row;
 	flex-direction: row;
 	margin-top: -50px;
 	list-style: none;
@@ -75,18 +69,18 @@ h1 {
 
 
 	nav a {
-		display: grid;
+		display: flex;
 		flex-direction: row;
-		color: var(--accent3-color);
-		background-color: #ffbe0b;
+		color: var(--secondary-color);
 		margin-top: 0px;
 		height: auto;
-		gap: 200px;
+		
 		
 	}
 	
 nav a:hover {
-	color: var(--accent2-color);
+	color: var(--accent3-color);
+  background-color: var(--secondary-color);
 	height: 0px;
 	margin-top: 0px;
 	
@@ -94,14 +88,14 @@ nav a:hover {
 }
 
 	.navmenu{
-		display: grid; 
-		grid-row:  row;
+		display: flex; 
+		flex-direction:  row;
 		padding:  2rem;
 		width: 40%;
 		row-gap: 2rem;
 		font-size: large;
 		font-weight: bold;
-		margin-top: 40px;
+		margin-top: -10px;
 		justify-content: end;
 
 	}
@@ -109,10 +103,11 @@ nav a:hover {
 
 
 nav ul {
-display: grid;
-grid-row: row;
-
+display: flex;
+flex-direction: row;
+list-style-type: none;
 gap: 1rem;
+background-color: var(--primary-color);
 }
 
 .container {
@@ -122,6 +117,16 @@ gap: 1rem;
   padding: 20px;
   justify-content: center;
 }
+
+
+#zaouli{
+  color: var(--primary-color);
+}
+
+.active{
+  color: var(--accent3-color);
+}
+
 
 .temple-card {
   background: var(--accent2-color);

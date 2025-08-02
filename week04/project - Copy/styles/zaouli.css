@@ -1,21 +1,12 @@
 :root {
+  --primary-color :  #4B0082;
+  --secondary-color : #FFFFFF;
+  --accent1-color : #000000;
+  --accent2-color : #D3C8C8;
+  --accent3-color : #0FE6DB;
   --heading-font: 'Roboto', sans-serif;
   --body-font: 'Arvo', sans-serif;
 }
-
-
-:root {
-  --primary-color :  #080708;
-  --secondary-color : #ffbe0b;
-  --accent1-color : #fb5607;
-  --accent2-color : white;
-  --accent3-color : #670909;
-  --accent4-color:  #112A46;
-  --heading-font : "Roboto";
-  
-
-}
-
 
 *{
 	margin: 0;
@@ -23,19 +14,18 @@
 	box-sizing: border-box;
 }
 
-body {font-family: Roboto, sans-serif;
 
-}
+
 
 /* mobile **************************/
 header {
-	background-color:var(--secondary-color);
+	background-color:var(--primary-color);
 	display: grid;
 	grid-gap: 0rem;
 	padding: 20px;
-	border: 1px solid #ffbe0b;
-	box-shadow: 0 0 30px var(--accent4-color);
-	height: 80px;
+	border: 1px solid var(--secondary-color);
+	box-shadow: 0 0 30px var(--accent2-color);
+	height: 90px;
 	position: relative;
 	margin-left: 0px;
 	
@@ -55,17 +45,32 @@ h2 {
 	
 }
 
-#mena{
+#zaouli{
 	margin-top: 100px;
-	color: var(--accent4-color);
+	color: var(--accent3-color);
 }
+
+
+
+
+#iconik{
+  margin-top: -15px;
+  margin-left: -20px;
+  width: 60px;
+  height: 80px;
+}
+
+#zaouli_description{
+font-style: oblique;
+}
+
 
 #menu {
 	
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
-	color:var(--accent4-color);
+	color:var(--secondary-color);
 	position: absolute;
 	display: block;
 	top: 1rem;
@@ -96,13 +101,13 @@ h2 {
 }
 
 .js-enabled .navmenu.open ul {
-  max-height: 500px;
+  max-height: 400px;
 }
-
 
 nav ul {
   flex-direction: column;
-  background-color: #3a86ff;
+  background-color: var(--accent2-color);
+  color: var(--accent1-color);
   margin-left: 10px;
   margin-top: 20px;
   font-weight: bolder;
@@ -114,7 +119,7 @@ nav ul {
 
 nav a {
 	display: block;
-	color:white;
+	color: var(--accent1-color);
 	font-weight: bolder;
 	text-align: center;
 	padding: 0rem;
@@ -126,17 +131,17 @@ nav a {
 }
 
 nav a:hover {
-	color: var(--accent2-color);
+	color: var(--primary-color);
 	height: 80px;
 	width: auto;
-	color: var(--secondary-color);
+	
 	
 	
 	
 }
 
 .active {
-	color:yellow ;
+	color:var(--primary-color) ;
 }
 
 
@@ -194,10 +199,10 @@ footer{
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
-  margin-top: 70px;
-  height: 80px;
-  color:var(--accent3-color);
-  background-color: var(--secondary-color);
+  margin-top: 16rem;
+  height: 60px;
+  color:var(--secondary-color);
+  background-color: var(--primary-color);
   font-family: var(--heading-font) ;
 	font-weight: bolder;
 }
@@ -212,4 +217,3 @@ footer{
   color: var(--accent4-color);
   
 }
-

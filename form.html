@@ -68,7 +68,8 @@
 
         <fieldset class="fieldsetDate">
           <legend>Date of Installation</legend>
-          <input type="date" id="datex" name="datex" required >
+           <label for="datex"></label>
+          <input type="date" id="datex" name="datex" required="" >
         </fieldset>
 
         <fieldset>
@@ -95,10 +96,12 @@
         </fieldset>
         <fieldset class="fieldsetZ">
           <legend>Written Review(<span id="optional1">Optional</span>)</legend>
+          <label for="area"></label>
           <textarea id="area" name="area" rows="5" cols="50"></textarea>
         </fieldset>
         <fieldset class="fieldsetLast">
           <legend>Your Name(<span id="optional2">Optional</span>)</legend>
+          <label for="YourName"></label>
           <input  type="text"  pattern="[A-Za-z\s]+"  id="YourName" name="YourName" >
         </fieldset>
         <button type="submit">Submit Review</button>

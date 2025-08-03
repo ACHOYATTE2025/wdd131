@@ -71,9 +71,9 @@ form{
   flex-direction: column;
   gap: 30px;
   width: 100%;
-  padding-left: 2rem;
+  padding-left: 1.5rem;
   padding-top: 1rem;
-  height: 735px;
+  height: 775px;
  
   text-align: left;
   background-color: var(--accent2-color);

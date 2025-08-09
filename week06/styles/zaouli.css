@@ -158,10 +158,7 @@ nav a:hover {
 	height: 80px;
 	width: auto;
 	
-	
-	
-	
-}
+	}
 
 .active {
 	color:var(--secondary-color) ;
@@ -227,10 +224,6 @@ main {
   
 }
 
-  
-  
-
-
 .hero-overlay p{
   font-size:20px;
   font-weight: bolder;
@@ -282,6 +275,17 @@ main {
   height: 100vh;
   
   
+}
+
+
+#zaza{
+  position: absolute;
+  color: var(--primary-color);
+  margin-top: 4rem;
+  margin-left: 0rem;
+  border: 1px solid var(--accent4-color);
+  padding: 1rem;
+  font-size: larger;
 }
 
 .bande-container {
@@ -381,7 +385,7 @@ main {
 .video-background2{
   position: absolute;
   margin-top: -13rem;
-  margin-left: 9rem;
+  margin-left: 4rem;
  }
 
 
@@ -395,8 +399,8 @@ main {
 }
 
 .video-background{
-  margin-top: 5rem;
-  margin-left: 9rem;
+  margin-top: 1rem;
+  margin-left: 4rem;
   
  }
 

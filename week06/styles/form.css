@@ -184,7 +184,7 @@ main {
 
 
 .ligne{
-  width:80%;
+  width:100%;
   height: 5px;
   background-color: var(--accent4-color);
  

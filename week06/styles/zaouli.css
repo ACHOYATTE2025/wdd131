@@ -345,6 +345,7 @@ main {
 
 
 #middle{
+  margin-right: 1rem;
   border: 2px solid var(--accent2-color);
   opacity: 1;
   box-shadow: 4px 4px 20px var(--accent4-color);
@@ -372,6 +373,7 @@ main {
 
 
 #middlex{
+  margin-right: 1rem;
   border: 2px solid var(--accent4-color);
   opacity: 1;
   box-shadow: 4px 4px 20px var(--primary-color);

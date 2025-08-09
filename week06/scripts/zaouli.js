@@ -105,5 +105,5 @@ else {
 	visitsDisplay.innerHTML = `<span>Your first visit. 🥳 Welcome!</span>`;
 }
 numVisits++;
-numVisits=0;
+
 localStorage.setItem("numVisits-ls", numVisits);

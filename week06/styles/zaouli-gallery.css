@@ -1,0 +1,520 @@
+
+:root {
+  --primary-color: #4B0082;
+   --secondary-color : #FFFFFF;
+  --accent1-color : #000000;
+  --accent2-color : #D3C8C8;
+  --accent3-color : #0AE60A;
+  --accent4-color : #ff6600;
+  --heading-font: 'Roboto', sans-serif;
+  --body-font: 'Arvo', sans-serif;
+}
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: var(--accent2-color);
+}
+
+
+/* mobile **************************/
+header {
+background-color:var(--primary-color);
+	display: grid;
+	grid-gap: 0rem;
+	padding: 20px;
+	border: 1px solid var(--secondary-color);
+	box-shadow: 0 0 30px var(--accent2-color);
+	height: 90px;
+	position: relative;
+	margin-left: 0px;
+	
+;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header{font-family: var(--heading-font);}
+body{font-family: var(--body-font);}
+
+
+
+
+
+#zaouli{
+	margin-top: 100px;
+	color: var(--accent3-color);
+  font-size: 2rem;
+	text-align: center;
+	margin-bottom: 5rem;
+}
+
+#iconik{
+  margin-top: -15px;
+  margin-left: -20px;
+  width: 60px;
+  height: 80px;
+  animation: moveAndRotate 2s ease-in-out infinite;
+}
+
+
+@keyframes moveAndRotate {
+   0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+
+  }
+
+#zaouli_description{
+font-style: oblique;
+}
+
+
+
+#menu::before {
+	content:"☰" ;
+  
+}
+
+#menu.open::before {
+	content: "❌";
+	
+	}
+
+  #menu {
+  display: flex;
+  color:var(--secondary-color);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  cursor: pointer;
+  justify-content: right;
+}
+
+
+
+@media (max-width: 767px) {
+    #submenu-toggle {
+    display: block;  
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+    position: absolute;
+    top: 29px;
+    right: 60px;
+    z-index: 1100;
+  }
+
+  #menu {
+    right: 20px; 
+  }
+
+
+
+
+  #menu {
+    right: 20px; /* Ajuste le hamburger */
+  }
+
+  /* En mobile, on cache le sous-menu dans le menu principal, même quand menu ouvert */
+  .navmenu.open .submenu {
+    display: none ;
+    opacity: 0 ;
+    
+  }
+/* Style du sous-menu */
+
+}
+
+
+.close{
+	margin-top: 0rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+	justify-content: center;
+}
+
+.js-enabled .navmenu ul {
+  display: block;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease;
+  background-color: var(--accent4-color);
+}
+
+.js-enabled .navmenu.open ul {
+  max-height: 400px;
+  padding: 10px 0;
+  z-index: 20;
+  position: relative
+  
+}
+
+nav ul {
+ position: relative;
+  flex-direction: column;
+  color: var(--secondary-color);
+  margin-left: 10px;
+  margin-top: 20px;
+  font-weight: bolder;
+  font-size: large;
+  border-radius: 8px;
+  transition: max-height 0.5s ease;
+}
+
+
+nav a {
+	display: block;
+	color: var(--accent1-color);
+	font-weight: bolder;
+	text-align: center;
+	padding: 0rem;
+	text-decoration: none;
+	font-size: large;
+	height: 80px;
+	margin-top:10px;
+	
+}
+/* Menu caché par défaut */
+.hidden-menu {
+  display: none;
+  position: absolute;
+  top: 60px; /* Ajuste selon ta hauteur de header */
+  right: 60px; /* Aligné à droite du bouton */
+  background-color:var(--primary-color);
+  width: 85px;
+  min-height: 120px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  z-index: 2000;
+}
+
+.hidden-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden-menu ul li {
+  margin: 10px 0;
+}
+
+.hidden-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-left: 0rem;
+}
+
+/* Menu visible */
+.hidden-menu.show {
+  display: block;
+}
+
+.hidden-menu ul li :hover{
+  background-color: var(--accent4-color);
+  
+}
+
+ 
+
+
+
+
+
+.active {
+	color:var(--secondary-color) ;
+}
+
+
+main {
+  max-width: 767px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+	justify-content: center;
+}
+
+footer{
+  position:sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  height: 70px;
+  color:var(--secondary-color);
+  background-color: var(--primary-color);
+  font-family: var(--heading-font) ;
+	
+}
+
+
+/* Larger Views ******************************/
+@media (min-width: 768px) {
+header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+
+
+main{
+  width: 1380px;
+  margin: 0 auto;
+  align-items: center;
+  place-items: center;
+ 
+}
+
+header{font-family: var(--heading-font);}
+body{font-family: var(--body-font);}
+
+
+
+.actived{
+  font-size: small;
+}
+
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+ #submenu-toggle {
+    display: none;
+  }
+  
+#iconik{
+  margin-top: 5px;
+  margin-left: 0px;
+  width: 60px;
+  height: 80px;
+}
+
+
+.close{
+	display: flex;
+	flex-direction: row;
+}
+
+.js-enabled .navmenu ul {
+  display: flex;
+	flex-direction: row;
+	margin-top: -30px;
+	list-style: none;
+	height: 10px;
+	overflow: visible;
+	margin-bottom: 0px;
+  transition: max-height 0.5s ease;
+  background-color: #4B0082;
+  color: var(--secondary-color);
+}
+
+
+
+	nav a {
+		display: flex;
+		flex-direction: row;
+		color: var(--secondary-color);
+		margin-top: 0px;
+		height: auto;
+		
+		
+	}
+
+
+	.submenu li a:hover {
+
+  background-color: var(--accent4-color);
+  color: var(--secondary-color);
+ 
+}
+
+
+
+	.navmenu{
+		display: flex; 
+		flex-direction:  row;
+		padding:  2rem;
+		width: 40%;
+		row-gap: 2rem;
+		font-size: large;
+		font-weight: bold;
+		margin-top: 50px;
+		justify-content: end;
+
+	}
+
+
+
+nav ul {
+display: flex;
+flex-direction: row;
+list-style-type: none;
+gap: 1rem;
+
+} 
+/* Style du sous-menu */
+
+.dropdown {
+  position: relative;
+  
+}
+/* Par défaut, le sous-menu est masqué */
+.submenu {
+  display: none;               /* caché par défaut */
+  position: absolute;
+  margin-top: 5rem;  
+  margin-left: -1rem;              
+  left: -1px;
+  width: 98px;               
+  min-height: 170px;          
+  background-color: var(--primary-color); 
+  padding: 20px;              
+  box-shadow: 0 4px 15px var(--accent1-color);
+  list-style: none;
+  margin: 0;
+  border-radius: 8px;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.submenu.show {
+  display: block;
+  place-items: center;
+  margin-left: -1rem; 
+  opacity: 1;
+ transform: translateY(10px);
+}
+
+/* Empêche les styles de nav ul de s'appliquer aux sous-menus */
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+nav ul ul {
+  flex-direction: column !important;
+  display: block;
+
+}
+
+
+
+
+
+
+
+.container {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  margin-top: 5rem;
+	place-items: center;
+}
+
+
+.active {
+	color:var(--accent4-color) ;
+}
+
+
+.temple-card {
+  background: var(--secondary-color);
+  padding: 0rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 300px;
+  height: 350px;
+	align-items: center;
+	text-align: center;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.temple-card:hover {
+  transform: scale(1.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  place-items: center;
+  align-items: center;
+	
+}
+
+.temple-card img {
+  width: 100%;
+ 	margin-top: 10px;
+}
+
+.label {
+  font-weight: bold;
+	color: var(--accent4-color);
+}
+
+footer{
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-top:100%;
+  height: 70px;
+  color:var(--secondary-color);
+  background-color: var(--primary-color);
+  font-family: var(--heading-font) ;
+	
+}
+
+
+}
+
+
+#footerp1{
+ padding-bottom: 15px;
+ 
+}
+#lastModified{
+  position: absolute;
+  padding-top: 25px;
+  
+  
+}
+
+
+
+
